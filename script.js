@@ -8,3 +8,9 @@ switchInput.addEventListener('change', function() {
         overlay.style.opacity = '0';
     }
 });
+document.getElementById('switch').addEventListener('change', function() {
+    const switchSound = document.getElementById('switch-sound');
+    switchSound.currentTime = 0; // Reseta o som para o início
+    switchSound.play(); // Toca o som
+});
+
